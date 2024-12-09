@@ -1,0 +1,323 @@
+/* General Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+/* Header Styles */
+.header-actions {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping for small screens */
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header-actions .search-input {
+    padding: 6px;
+    font-size: 14px;
+    width: 100%; /* Full width on small screens */
+    max-width: 200px; /* Restrict width on larger screens */
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    margin-bottom: 10px; /* Add spacing for small screens */
+}
+
+.header-actions .add {
+    padding: 8px 12px;
+    font-size: 14px;
+    background-color: #82119c;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.header-actions .add:hover {
+    opacity: 0.9;
+}
+
+/* Title Style */
+h1 {
+    font-size: 32px;
+    margin: 10px 0;
+    text-align: center;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+/* Button Styles */
+button {
+    padding: 10px 15px;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"] {
+    background-color: #82119c;
+}
+
+button.edit {
+    background-color: #c336e3;
+}
+
+button.delete {
+    background-color: #ec6f7c;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+    background-color: #fff;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th, td {
+    padding: 12px;
+}
+
+th {
+    background-color: #82119c;
+    color: #fff;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Modal Styles */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    padding: 15px; /* Padding for smaller screens */
+}
+
+.modal-content {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.modal-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* Centered Button Container */
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.button-container button {
+    flex: 1;
+}
+
+/* Form Input Styles */
+input[type="text"], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Pagination Styles */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.pagination button {
+    padding: 8px 12px;
+    font-size: 14px;
+    background-color: #82119c;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 0 5px;
+}
+
+.pagination button:hover{
+    background-color: #4c0c5b;
+}
+
+.pagination button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.pagination span {
+    font-size: 14px;
+    margin: 0 10px;
+}
+
+/* Add spacing and style for the modal */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px 30px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.modal-content h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+    color: #333;
+}
+
+.modal-content p {
+    margin: 10px 0;
+    line-height: 1.6;
+    font-size: 16px;
+    color: #555;
+}
+
+.modal-buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.modal-buttons button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.modal-buttons button:hover {
+    background-color: #0056b3;
+}
+
+/* Adjust close button */
+.modal-content button {
+    display: inline-block;
+    margin-top: 15px;
+    background-color: #82119c;
+    color: white;
+}
+
+.modal-content button:hover {
+    background-color: #d32f2f;
+}
+
+
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    /* Responsive table */
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+    thead tr {
+        display: none;
+    }
+    td {
+        padding: 10px;
+        border: none;
+        position: relative;
+        padding-left: 50%;
+        text-align: right;
+    }
+    td:before {
+        position: absolute;
+        left: 15px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        text-align: left;
+        font-weight: bold;
+    }
+    td:nth-of-type(1):before { content: "Bike Part Name"; }
+    td:nth-of-type(2):before { content: "Manufacturer"; }
+    td:nth-of-type(3):before { content: "Created At"; }
+    td:nth-of-type(4):before { content: "Updated At"; }
+    td:nth-of-type(5):before { content: "Actions"; }
+
+    /* Adjust search input and add button to stack vertically */
+    .header-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .header-actions .search-input {
+        max-width: 100%;
+        margin-bottom: 10px;
+    }
+    .header-actions .add {
+        width: 100%;
+    }
+
+    /* Adjust title size */
+    h1 {
+        font-size: 24px;
+    }
+
+    /* Modal adjustments for small screens */
+    .modal-content {
+        width: 90%;
+        padding: 20px;
+    }
+}
